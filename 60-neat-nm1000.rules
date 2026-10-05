@@ -1,0 +1,8 @@
+# Neat NM-1000 (1f44:0001) — Linux USB permissions
+# Install: sudo cp 60-neat-nm1000.rules /etc/udev/rules.d/
+#          sudo udevadm control --reload-rules && sudo udevadm trigger
+# Then replug the scanner. Verify with: ls -l /dev/bus/usb/*/*
+# (should show group 'scanner' with rw, or uaccess tag for logind).
+# User must be in 'scanner' group: sudo usermod -aG scanner $USER (re-login).
+
+SUBSYSTEM=="usb", ATTRS{idVendor}=="1f44", ATTRS{idProduct}=="0001", MODE="0664", GROUP="scanner", TAG+="uaccess", ENV{libsane_matched}="yes"
