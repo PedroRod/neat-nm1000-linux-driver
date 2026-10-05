@@ -637,7 +637,6 @@ NM_LOCAL SANE_Status sane_start(SANE_Handle h)
         "/usr/share/sane/neatnm1000/",
         "/usr/local/share/sane/neatnm1000/",
         "./",
-        "/home/pedro/Documents/NeatScan/",
         NULL
     };
     char json_path[512] = "", bin_path[512] = "";
