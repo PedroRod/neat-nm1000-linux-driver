@@ -1,0 +1,10 @@
+﻿
+
+FriendlyName : Neat Mobile Scanner
+InstanceId   : USB\VID_1F44&PID_0001\CN097P200185
+Status       : OK
+Class        : Image
+Manufacturer : The Neat Company
+
+
+

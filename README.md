@@ -43,6 +43,8 @@ python3 nm1000_scan.py --mode gray --dpi 300 --raw s.raw --out s.png -v
 | `nm1000-ctrl-*.json` | Ordered EP0 vendor init scripts per mode |
 | `nm1000-*-out.bin` | Bulk-OUT calibration blobs, replayed in captured splits |
 | `60-neat-nm1000.rules` | udev permissions rule |
+| `PROTOCOL.md` | Full USB protocol spec (transfers, phases, sensor codes) |
+| `specs/` | Raw capture notes: decoded control sequences, descriptors, full session log (`ROLLERS_DEBUG.md`). The 266 MB `.pcap` captures stay local (over GitHub's file cap); the JSON/BIN above encode every byte sent. |
 
 ## Notes
 
